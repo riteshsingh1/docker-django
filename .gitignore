@@ -1,3 +1,4 @@
 .env.prod
 postgres-data
 data
+.env.db.prod
