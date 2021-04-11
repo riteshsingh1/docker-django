@@ -51,5 +51,12 @@ $ docker-compose -f docker-compose.prod.yml exec web python manage.py collectsta
 sudo chown -R $USER:$USER .
 ```
 
+# For Connecting with pgAdmin
 
+Run 
+```bash
+$ docker ps
+$ docker inspect fcc97e066cc8 | grep IPAddress
+```
 
+`fcc97e066cc8` is the `CONTAINER_ID` that you will get after running `docker ps`
