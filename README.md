@@ -43,5 +43,13 @@ $ docker-compose -f docker-compose.prod.yml exec web python manage.py collectsta
 
 ## In production 1 folder `postgres-data` will be created make sure to keep this folder to `.gitignore`. This folder will be used to store database , so that data can be persisted even when containers are rebuild.
 
+----------------------------
+## If You Face permission issues just run:
+
+
+```bash
+sudo chown -R $USER:$USER .
+```
+
 
 
